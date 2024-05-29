@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.activities.MainActivity">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_indicator"
+        android:visibility="gone"
+        android:indeterminate="true"
+        app:trackColor="@color/main_t"
+        app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tw_no_persons"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:gravity="center"
+    android:text="@string/start_screen_no_persons_text"
+    />
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_person_list"
+    android:layout_width="0dp"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:listitem="@layout/person_item"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_person_manually"
+        app:fabCustomSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@id/fab_add_person"
+        app:layout_constraintTop_toTopOf="@id/fab_add_person"
+        app:layout_constraintStart_toStartOf="@id/fab_add_person"
+        app:layout_constraintEnd_toEndOf="@id/fab_add_person"
+        app:backgroundTint = "@color/main_t"
+        app:tint="@color/secondary_t"
+        app:srcCompat="@drawable/ic_manual" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_person_by_network"
+        app:fabCustomSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@id/fab_add_person"
+        app:layout_constraintTop_toTopOf="@id/fab_add_person"
+        app:layout_constraintStart_toStartOf="@id/fab_add_person"
+        app:layout_constraintEnd_toEndOf="@id/fab_add_person"
+        app:backgroundTint = "@color/main_t"
+        app:tint="@color/secondary_t"
+        app:srcCompat="@drawable/ic_download"  />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_person"
+        app:fabCustomSize="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_21"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="Add new person item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:backgroundTint = "@color/main_t"
+        app:tint="@color/secondary_t"
+        app:srcCompat="@drawable/ic_add_person" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

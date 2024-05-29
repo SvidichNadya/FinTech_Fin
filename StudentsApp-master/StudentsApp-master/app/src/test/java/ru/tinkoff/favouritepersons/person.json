@@ -1,0 +1,11 @@
+{
+  "name": "Иван",
+  "surname": "Иванов",
+  "gender": "М",
+  "birthdate": "1990-10-10",
+  "email": "ivan@ivan.ru",
+  "phone": "89999999999",
+  "address": "г. Иваново",
+  "image": "https://example.com/image.jpg",
+  "rating": 100
+}

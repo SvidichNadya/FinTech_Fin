@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas .android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="90dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        android:background="@color/dialog_line_color"
+        ></View>
+    <RadioGroup
+        android:paddingTop="@dimen/standard_21"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/bsd_rb_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="По умолчанию (В порядке добавления)"
+            />
+
+        <RadioButton
+            android:id="@+id/bsd_rb_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="По возрасту"
+            />
+
+        <RadioButton
+            android:id="@+id/bsd_rb_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="По итоговому баллу"
+            />
+
+        <RadioButton
+            android:id="@+id/bsd_rb_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="По ФИО"
+            />
+    </RadioGroup>
+
+</LinearLayout>

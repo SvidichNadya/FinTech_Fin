@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="rating_fail">#E82727</color>
+    <color name="rating_bad">#E86B27</color>
+    <color name="rating_normal">#E8C827</color>
+    <color name="rating_perfect">#00FF22</color>
+    <color name="main_t">#F9DE56</color>
+    <color name="secondary_t">#FF000000</color>
+    <color name="text_color">#FF000000</color>
+    <color name="background_delete_color">#F8BBD0</color>
+    <color name="background_dialog_color">#FFFFFF</color>
+    <color name="dialog_line_color">#AAAAAA</color>
+
+</resources>
